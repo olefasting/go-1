@@ -7,6 +7,4 @@ package codec
 
 import "os"
 
-func init() {
-	genCheckVendor = os.Getenv("GO15VENDOREXPERIMENT") == "1"
-}
+var genCheckVendor = os.Getenv("GO15VENDOREXPERIMENT") == "1"
